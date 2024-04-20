@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Do Digital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightcyan;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+            color: #007bff;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Responsive Styling */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+                margin: 20px auto;
+            }
+        }
+        
+/* Enquiry section styles */
+.enquiry {
+  background-color: lightcyan; /* Semi-transparent background */
+  padding: 50px 0;
+}
+
+.container_abc {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ff8a00, #e52e71, #3e1146, #3a86ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section-title:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Form styles */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #555;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="enquiry">
+        <div class="container_abc">
+          <h2 class="section-title">
+      
+            <span class="gradient-text">Fill this form , We will reply as soon as Possible</span>
+        </h2>
+        
+          <div class="form-container">
+            <form class="contact-form" action="https://formspree.io/f/xeqboodb" method="POST">
+              <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="number" name="mobile" id="mobile" placeholder="Your Mobile Number" required>
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" placeholder="Your Message" rows="4" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, feel free to get in touch with us!</p>
+        
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Address: Andheri West, Mumbai</p>
+            <p><i class="fas fa-phone-alt"></i> Phone: <a href="tel:+919721459936">9721459936</a></p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:dodigital45@gmail.com">dodigital45@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>

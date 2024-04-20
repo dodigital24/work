@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      margin-bottom: 20px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .location-info {
+      text-align: center;
+    }
+
+    .contact-details {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .contact-details p {
+      margin-bottom: 5px;
+    }
+
+    .contact-details p:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-details a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+
+    .additional-info {
+      margin-top: 20px;
+      opacity: 0;
+      animation: fade-in 1s forwards;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Location</h1>
+
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30168.93625357414!2d72.82952743102178!3d19.124897161032673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7ef2ea05cf5%3A0x92e1f2e106dace0!2sVeera%20Desai%20Road%2C%20Andheri%20West%2C%20Mumbai%2C%20Maharashtra%20400058!5e0!3m2!1sen!2sin!4v1649870867414!5m2!1sen!2sin" 
+              width="600" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="location-info">
+      <p><strong>Location:</strong> Veera Desai Road, Andheri West, Mumbai, Maharashtra 400058</p>
+    </div>
+
+    <div class="contact-details">
+      <p><strong>Email:</strong> <a href="mailto:p6403714@gmail.com">p6403714@gmail.com</a></p>
+      <p><strong>Mobile Number:</strong> <a href="tel:+919721459936">9721459936</a></p>
+    </div>
+
+    <div class="additional-info">
+      <h2>Additional Information</h2>
+      <p>If You want to make any website, App, software contact us given number or email.</p>
+ 
+    </div>
+  </div>
+</body>
+</html>

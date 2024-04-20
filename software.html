@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<style>
+  .containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Section styles */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* Left side (image) */
+.left, .right {
+  flex: 1;
+}
+
+.left img, .right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Middle (circle) */
+.middle {
+  flex: 1;
+  text-align: center;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 60%;
+  background-color: #3498db;
+  color: white;
+  line-height: 60px;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+/* Right side (paragraph or image) */
+.right {
+  flex: 1;
+}
+
+.right p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dotted line */
+.dotted-line {
+  width: 2px;
+  height: 80px;
+  background-color: #999;
+  margin: 0 auto;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+  
+  .section {
+    flex-direction: row;
+  }
+
+  .left, .middle, .right {
+    flex: 1;
+  }
+
+  .dotted-line {
+    height: 100px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    line-height: 80px;
+  }
+}
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Set width to take half of the container */
+    margin-top: 50px;
+  }
+
+  .image-description {
+    margin-bottom: 20px;
+  }
+
+  .image-description img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-description p {
+    margin-top: 10px;
+  }
+
+  .form-container {
+    width: 40%; /* Set width to take 40% of the container */
+    margin-top: 250px; /* Add margin to separate the form on small screens */
+    background-color: hotpink;
+  }
+
+  .card {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .card h2 {
+    margin-bottom: 20px;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .input-group input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  /* Media query for small screens */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Change to column layout */
+    }
+
+    .image-container,
+    .form-container {
+      width: 100%; /* Set width to take full width on small screens */
+    }
+
+    .form-container {
+      margin-top: 20px; /* Adjust margin for form */
+
+    }
+  }
+  .navbar {
+  background-color:rgb(115, 58, 194);
+  overflow: hidden;
+  width: 100%;
+}
+
+
+
+/* Centered link */
+.middle-link {
+  float: none;
+  text-align: center;
+}
+
+/* On hover, the links will turn grey */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.a{
+  text-align: center;
+  justify-content: center;
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-section h2 {
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+        .section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ff8a00, #e52e71, #3e1146, #3a86ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <h2 class="sections-title">
+        <span class="gradient-text">Software</span>
+        <span class="gradient-text">Development</span>
+       
+    </h2>
+  </div>
+<div class="container">
+  <div class="image-container">
+    <div class="image-description">
+      <img src="https://blog.frontrangesystems.com/hubfs/AdobeStock_267991674.jpeg#keepProtocol" alt="Image 1">
+      <p>Begin by clearly defining the purpose of the app and understanding the target audience.</p>
+    </div>
+    <div class="image-description">
+      <img src="https://blog.frontrangesystems.com/hubfs/AdobeStock_267991674.jpeg#keepProtocol" alt="Image 2">
+      <p>Create wireframes and prototypes to visualize the app's layout and navigation flow.</p>
+    </div>
+    <div class="image-description">
+      <img src="https://blog.frontrangesystems.com/hubfs/AdobeStock_267991674.jpeg#keepProtocol" alt="Image 3">
+      <p> Utilize appropriate programming languages and frameworks to implement the planned features and functionalities of the app.</p>
+    </div>
+    <div class="image-description">
+      <img src="https://blog.frontrangesystems.com/hubfs/AdobeStock_267991674.jpeg#keepProtocol" alt="Image 4">
+      <p> Conduct rigorous testing to identify and rectify any bugs, glitches, or performance issues. </p>
+    </div>
+    <div class="image-description">
+      <img src="https://blog.frontrangesystems.com/hubfs/AdobeStock_267991674.jpeg#keepProtocol" alt="Image 5">
+      <p>Deploy the app to the relevant platforms such as the App Store, Google Play Store, or web servers.</p>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <div class="card">
+      <h2>Get in Touch</h2>
+      <form action="#">
+        <div class="input-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="input-group">
+          <input type="text" id="address" name="address" placeholder="Your Address" required>
+        </div>
+        <div class="input-group">
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="a">
+    <h2 class="sections-title">
+        <span class="gradient-text">Software</span>
+        <span class="gradient-text">Development</span>
+       
+    </h2>
+</div>
+
+<!-- Container -->
+<div class="containers">
+  <!-- First section -->
+  <div class="section">
+    <!-- Left side (image) -->
+    <div class="left">
+      <img src="https://www.inprod.io/wp-content/uploads/2020/01/cloud-deployment-vector.png" alt="Image 1">
+    </div>
+  
+    <!-- Middle (circle) -->
+    <div class="middle">
+      <div class="circle">1</div>
+    </div>
+  
+    <!-- Right side (paragraph) -->
+    <div class="right">
+        <h1 class="sections-title">
+            <span class="gradient-text">Embracing Emerging Technologies</span>
+            <!-- <span class="gradient-text">Designing</span> -->
+           
+        </h1>
+        
+      <p>Highlight your expertise in emerging technologies like artificial intelligence, machine learning, blockchain, or augmented reality. Showcase how you integrate these technologies into your software solutions to drive innovation and create competitive advantages for your clients.</p>
+    </div>
+  </div>
+
+  <!-- Dotted line -->
+  <div class="dotted-line"></div>
+
+  <!-- Second section -->
+  <div class="section">
+    <!-- Left side (paragraph) -->
+    <div class="left">
+        <h1 class="sections-title">
+            <span class="gradient-text">Cross-Platform Development</span>   
+        </h1>
+        <h2></h2>
+      <p>Leveraging the latest technologies and development methodologies, we build cutting-edge apps that set new standards in performance, usability, and functionality. From AI-powered features to blockchain integration, we stay at the forefront of technology to ensure your software stays ahead of the curve.</p>
+    </div>
+
+    <!-- Middle (circle) -->
+    <div class="middle">
+      <div class="circle">2</div>
+    </div>
+
+    <!-- Right side (image) -->
+    <div class="right">
+      <img src="https://www.itprotoday.com/sites/itprotoday.com/files/software-development-button.jpg" alt="Image 2">
+    </div>
+  </div>
+   <!-- Dotted line -->
+   <div class="dotted-line"></div>
+  <!-- third -->
+  <div class="section">
+    <!-- Left side (image) -->
+    <div class="left">
+      <img src="https://effigentsolutions.com/assets/images/hm/implementation.jpg" alt="Image 1">
+    </div>
+  
+    <!-- Middle (circle) -->
+    <div class="middle">
+      <div class="circle">3</div>
+    </div>
+  
+    <!-- Right side (paragraph) -->
+    <div class="right">
+        <h1 class="sections-title">
+            <span class="gradient-text"> Security-First Approach</span>   
+        </h1>
+   
+      <p>Illustrate your commitment to security by outlining your proactive measures to safeguard sensitive data and protect against cyber threats. Discuss your adherence to industry standards and best practices in security, such as encryption, authentication mechanisms, and regular security audits.</p>
+    </div>
+  </div>
+   <!-- Dotted line -->
+   <div class="dotted-line"></div>
+
+   <!-- Second section -->
+   <div class="section">
+     <!-- Left side (paragraph) -->
+     <div class="left">
+        <h1 class="sections-title">
+            <span class="gradient-text"> Impactful Case Studies</span>   
+        </h1>
+       
+       <p>Showcase real-world examples of successful software projects you've delivered for clients across various industries. Provide case studies that highlight the challenges faced, solutions implemented, and measurable outcomes achieved, demonstrating your ability to drive tangible business results through software innovation.</p>
+     </div>
+ 
+     <!-- Middle (circle) -->
+     <div class="middle">
+       <div class="circle">4</div>
+     </div>
+ 
+     <!-- Right side (image) -->
+     <div class="right">
+       <img src="https://www.classicinformatics.com/hubfs/softwaress.png" alt="Image 2">
+     </div>
+   </div>
+  
+</div>
+<footer>
+  <div class="footer-section">
+      <h2>Important links</h2>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Service</a></li>
+      </ul>
+  </div>
+
+  <div class="footer-section">
+      <h2>Social Media</h2>
+      <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">X</a></li>
+      </ul>
+  </div>
+
+  <div class="footer-section">
+      <h2>Address</h2>
+      <ul>
+          <li><a href="#">Andheri west,</a></li>
+          <li><a href="#">Mumbai,</a></li>
+          <li><a href="#">400058</a></li>
+      </ul>
+  </div>
+</footer>
+
+</body>
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  const slides = document.getElementsByClassName("image-description");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</html>

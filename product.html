@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Showcase</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-category {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .category-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-card {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .product-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .product-card p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .website-category {
+    background-color: #ffc107;
+  }
+
+  .app-category {
+    background-color: #007bff;
+  }
+
+  .software-category {
+    background-color: #28a745;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .product-card {
+      width: calc(100% - 20px);
+    }
+  }
+
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Welcome to our Product Showcase!</h1>
+  <p>Here, you'll find a variety of products to suit your needs.</p>
+
+  <div class="product-category website-category">
+    <h2 class="category-heading">Website Products</h2>
+    <div class="product-cards">
+      <div class="product-card">
+        <h3>Website 1</h3>
+       <img src="https://www.shutterstock.com/shutterstock/photos/1792454965/display_1500/stock-vector-landing-page-on-theme-back-to-school-children-with-backpack-go-to-school-after-vacation-1792454965.jpg" alt="">
+      </div>
+      <div class="product-card">
+        <h3>Website 2</h3>
+        <img src="https://th.bing.com/th/id/OIP.oJYvpVjb3pzvjyDDscJzGAAAAA?rs=1&pid=ImgDetMain" alt="">
+      </div>
+      <div class="product-card">
+        <h3>Website 3</h3>
+        <img src="https://cdn.dribbble.com/users/2341405/screenshots/4827234/media/cd24af487230a575e1711bbab523173d.jpg?compress=1&resize=400x300&vertical=top" alt="">
+      </div>
+      <div class="product-card">
+        <h3>Website 4</h3>
+        <img src="https://image.freepik.com/free-vector/website-templates-music-themes-guitar-lessons-festivals-coaching-concert_98143-136.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="product-category app-category">
+    <h2 class="category-heading">App Products</h2>
+    <div class="product-cards">
+      <div class="product-card">
+        <h3>App 1</h3>
+        <img src="https://user-images.githubusercontent.com/56491717/125230041-9df6e380-e2f5-11eb-89e0-34a45ed1c59a.png" alt="">
+      </div>
+      <div class="product-card">
+        <h3>App 2</h3>
+        <img src="https://cdn.dribbble.com/users/4477466/screenshots/13682567/media/38ecec775f511529bea0a2ccdbf81dc6.png" alt="">
+      </div>
+      <div class="product-card">
+        <h3>App 3</h3>
+        <img src="https://assets.materialup.com/uploads/8bc1694d-d3db-4fc8-8979-341b1765a5b3/preview.jpg" alt="">
+      </div>
+      <div class="product-card">
+        <h3>App 4</h3>
+        <img src="https://th.bing.com/th/id/OIP.YVMoA0vHbzQN5IqHfYPY3QAAAA?rs=1&pid=ImgDetMain" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="product-category software-category">
+    <h2 class="category-heading">Software Products</h2>
+    <div class="product-cards">
+      <div class="product-card">
+        <h3>Software 1</h3>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/83edb486972601.5da9920e75c6b.jpg" alt="">
+      </div>
+      <div class="product-card">
+        <h3>Software 2</h3>
+        <img src="https://tiimg.tistatic.com/fp/1/006/899/college-management-software-339.jpg" alt="">
+      </div>
+      <div class="product-card">
+        <h3>Software 3</h3>
+        <img src="https://assets.goodfirms.co/blog/general/1606992784-tms-features.jpg" alt="">
+      </div>
+      <div class="product-card">
+        <h3>Software 4</h3>
+        <img src="https://www.aspscriptsonline.com/wp-content/uploads/2017/09/Medical-shop_2.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
