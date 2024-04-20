@@ -1,24 +1,38 @@
-/* Container styles motivation lines */
-.container_motivation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full viewport height */
-  background-color: #f9f9f9; /* Background color for the container */
+       .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, p {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .services-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-/* Motivation line styles */
-.motivation-line {
-  color: #333; /* Default text color */
-  font-size: 36px;
+.gradient-text {
+  background: linear-gradient(to right, #ff8a00, #e52e71, #3e1146, #3a86ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.a{
   text-align: center;
-  line-height: 1.5;
-  padding: 20px;
-  border: 2px solid #333; /* Border around the text */
-  border-radius: 10px; /* Rounded corners */
-  background-image: linear-gradient(to right, #ff00cc, #3333ff, #00ff00); /* Gradient background */
-  -webkit-background-clip: text; /* Clip the text to the gradient background */
-  -webkit-text-fill-color: transparent; /* Make text transparent to show gradient background */
+  justify-content: center;
 }
 .navbar {
   background-color: #343a40;
