@@ -34,6 +34,16 @@
   text-align: center;
   justify-content: center;
 }
+  /* Responsive Styling */
+        @media only screen and (max-width: 600px) {
+            .container {
+                max-width: 90%;
+            }
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
 .navbar {
   background-color: #343a40;
   color: #ffffff;
