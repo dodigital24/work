@@ -284,7 +284,7 @@ body {
   
   /* For we shape wale box ka */
   /* Box layout styles */
-.box {
+/* .box {
   display: flex;
   flex-wrap: wrap; /* Enable wrapping for responsiveness */
   align-items: center;
@@ -294,22 +294,22 @@ body {
   margin: 50px auto; /* Center the box horizontally */
   max-width: 2000px; /* Set maximum width */
   background-color: #D81B60;
-}
+} */
 
-.container {
+/* .container {
   flex: 1; /* Take remaining space */
   padding-right: 20px; /* Add space between text and image */
-}
+} */
 
-.photo {
+/* .photo {
   flex: 1; /* Take remaining space */
-}
+} */
 
-.photo img {
+/* .photo img {
   max-width: 100%; /* Ensure image does not exceed container width */
   height: auto; /* Maintain aspect ratio */
 }
-
+ */
 /* Text styles */
 .title {
   color: #333;
