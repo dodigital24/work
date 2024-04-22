@@ -41,7 +41,11 @@
                 padding: 40px;
             }
         }
-
+  @media screen and (max-width: 768px) {
+            .card img {
+                max-width: 80%; /* Adjust this value as needed */
+            }
+        }
 
 
 
