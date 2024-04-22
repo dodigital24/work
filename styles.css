@@ -37,15 +37,11 @@
             height: auto;
         }
         @media screen and (min-width: 768px) {
-            .container {
+            .abc {
                 padding: 40px;
             }
         }
-  @media screen and (max-width: 768px) {
-            .card_head img {
-                max-width: 100%; /* Adjust this value as needed */
-            }
-        }
+ 
 
 
 
